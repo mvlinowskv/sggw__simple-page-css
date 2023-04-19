@@ -11,7 +11,7 @@
     <title>Beautiful buildings</title>
     <meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/styles.min.css">
     <link rel="shortcut Icon" href="images/apartment-svgrepo-com.svg">
 </head>
 
@@ -20,7 +20,11 @@
         <div class="header__logo">
             <img src="images/apartment-svgrepo-com.svg" alt="apartments icon"> Beautiful buildings
         </div>
+        <button class="hamburger-nav">
+            <img src="/images/hamburger-2-menu-mobile-svgrepo-com.svg">
+        </button>
         <nav class="header__nav">
+            <img class="header__nav-logo" src="images/apartment-svgrepo-com.svg" alt="apartments icon">
             <a href="#how-to-do">
                 How to do?
             </a>
@@ -63,6 +67,15 @@
             </div>
             <div class="box">
                 <img class="box__icon" src="images/house-svgrepo-com.svg" alt="house icon">
+                <p class="box__h">
+                    Lorem Ipsum is simply dummy text of the printing
+                </p>
+                <p class="box__p">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.
+                </p>
+            </div>
+            <div class="box">
+                <img class="box__icon" src="images/house-key-key-svgrepo-com.svg" alt="house icon">
                 <p class="box__h">
                     Lorem Ipsum is simply dummy text of the printing
                 </p>
@@ -128,11 +141,40 @@
             </div>
         </section>
 
+        <section class="slider">
+            <div class="slider__container">
+
+                <div class="slider__slide">
+                    <img class="img-fluid" src="/images/pexels-jonas-ferlin-1845269.jpg">
+                </div>
+                <div class="slider__slide">
+                    <img class="img-fluid" src="/images/pexels-brayden-law-1829191.jpg">
+                </div>
+                <div class="slider__slide">
+                    <img class="img-fluid" src="/images/pexels-misael-garcia-1707823.jpg">
+                </div>
+
+            </div>
+
+            <div class="slider__box">
+                <div class="slider__text">
+                    <h3 class="h3 h3--mb-0">Our projects</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ł
+                    </p>
+                </div>
+
+                <img src="/images/clock-svgrepo-com.svg" class="slider__clock">
+            </div>
+        </section>
+
     </main>
     <footer class="main-footer">
         Copyright by Apartment Buildings
     </footer>
 
+    <script type="text/javascript" src="/js/script.min.js"></script>
 </body>
 
 </html>

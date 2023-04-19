@@ -1,0 +1,77 @@
+.slider {
+    padding: 0 1rem;
+    border-top: 1rem solid #000;
+    margin-top: 1.5rem;
+    @media (min-width: 576px) {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+    }
+    &__container {
+        position: relative;
+        height: 27rem;
+        margin-top: 2rem;
+        width: 100%;
+        @media (min-width: 768px) {
+            height: 38rem;
+        }
+    }
+    &__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.4;
+        transition: opacity 0.4s linear;
+        max-height: 27rem;
+        width: 100%;
+        @media (min-width: 768px) {
+            max-height: 38rem;
+            max-width: 100%;
+            width: 100%;
+        }
+        img {
+            max-height: 27rem;
+            object-fit: cover;
+            object-position: center;
+            @media (min-width: 768px) {
+                max-height: 38rem;
+                max-width: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media (min-width: 768px) {
+            height: 38rem;
+            justify-content: space-around;
+        }
+    }
+    &__dot {
+        max-width: 150px;
+        height: 200px;
+    }
+    &__clock {
+        max-width: 150px;
+        width: 100%;
+        @media (min-width: 768px) {
+            max-width: 250px;
+        }
+    }
+    &__text {
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+}

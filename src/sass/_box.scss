@@ -1,0 +1,22 @@
+.box {
+    text-align: center;
+    box-shadow: 1px 0px 16px 0px #000;
+    padding: 4vw 1rem;
+    background: #fff;
+    &__h {
+        font-size: clamp(1rem, 1vw, 2rem);
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: #1e1c1c;
+    }
+    &__icon {
+        max-width: 65px;
+        margin-bottom: 0.75rem;
+    }
+    &__p {
+        margin-top: 0.5rem;
+        font-size: clamp(1rem, 1vw, 1.75rem);
+        color: #1e1c1c;
+    }
+}
